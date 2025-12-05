@@ -8,12 +8,15 @@ The page documents the API definition, the base URL and the optional parameters.
 
 You will use this API to retrieve the data necessary for this task.
 
-*Note*: We are not expecting you to complete **all** of the following tasks. Try to complete as many tasks as you can - ensure the tasks you select match your skill set. Focus on addressing the tasks that create the most significant impact for the end user
+*Note*: We are not expecting you to complete **all** of the following tasks. Try to complete as many tasks as you can - ensure the tasks you select match your skill set. Focus on addressing the tasks that create the most significant impact for the end user.
+
+*Submitting the task*: You may use any IDE of your choice to complete the task. Once completed, please zip the entire folder and email it as an attachment to recruitment@squaredup.com with your full name in the subject line.
 
 ### Back-end
-    - Find the percentage of problems vs questions vs task types of issues on sample of 500 data points
+    - Find the percentage of open vs closed vs pending issues on sample of 500 data points
     - Find the percentage of high vs medium vs low priority issues on sample of 500 data points
-    - Find the average time it took to close high priority issues of any type on sample of 500 data points
+    - Find the percentage of on-time vs overdue resolutions
+    - Find the average time it took to close the high priority issues of any type on sample of 500 data points
     - What was the “score” value of the “satisfaction_rating” on the issue that took longer to solve in the above set?
     - If time allows, feel free to return any other useful insights from the dataset that you can think of
 
