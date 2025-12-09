@@ -25,3 +25,11 @@ export interface SampleData {
         ticket_form_id: string;
     }[];
 }
+
+export interface Parameter {
+    parameter: keyof SampleData['results'][0];
+    types: {
+        label: string;
+        categories: string[];
+    }[];
+}
