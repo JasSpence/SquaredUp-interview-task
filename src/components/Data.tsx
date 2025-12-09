@@ -2,7 +2,11 @@ import { SampleData } from "api/types";
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
-function Data() {
+type Props = {
+  url: string;
+};
+
+function Data({ url }: Props) {
     const [data, setData] = useState<SampleData | undefined>(undefined);
 
     /**
@@ -13,7 +17,7 @@ function Data() {
         let mounted = true;
 
         const fetchData = async () => {
-            const { data: allData } = await axios.get<SampleData>('/api/data');
+            const { data: allData } = await axios.get<SampleData>(url);
 
             if (mounted) {
                 setData(allData)
@@ -23,7 +27,7 @@ function Data() {
         fetchData();
 
         return () => { mounted = false; }
-    }, [])
+    }, [url])
 
     if (!data) {
         return 'loading data...';
