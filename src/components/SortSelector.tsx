@@ -37,10 +37,10 @@ export default function SortSelector({ url, setUrl }: Props) {
                 {VALID_SORT_PARAMS.map((param) => (
                     <Fragment key={param}>
                         <option value={`+${param}`}>
-                            {param}: Low to High
+                            {param.toUpperCase()}: Low to High
                         </option>
                         <option value={`-${param}`}>
-                            {param}: High to Low
+                            {param.toUpperCase()}: High to Low
                         </option>
                     </Fragment>
                 ))}
